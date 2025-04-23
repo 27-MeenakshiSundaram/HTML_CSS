@@ -2,119 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Student Profile</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .container {
-      text-align: center;
-      max-width: 700px;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      color: darkblue;
-      margin: 8px 0;
-    }
-
-    img {
-      width: 150px;
-      border-radius: 8px;
-      margin: 10px 0;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin: 10px auto;
-    }
-
-    th, td {
-      border: 1px solid #333;
-      padding: 8px;
-    }
-
-    input {
-      padding: 6px;
-      margin-top: 5px;
-    }
-
-    button {
-      padding: 6px 12px;
-      margin-top: 5px;
-      background-color: steelblue;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: navy;
-    }
-
-    iframe {
-      margin-top: 10px;
-    }
-
-    p {
-      line-height: 1.5;
-    }
-  </style>
+  <title>School Student Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
+    <div class="form-container">
+      <h2>Student Login</h2>
+      <form>
+        <label for="message">Student Name:</label>
+        <input type="text" id="message" placeholder="Enter Your Name" />
+        <label for="name">Student id:</label>
+        <input type="text" id="name" placeholder="Enter your ID" />
 
-    <h1>Welcome to My Student Profile</h1>
-    <h2>Personal Information</h2>
-    <h3>Basic Details</h3>
-    <h4>Academic Overview</h4>
-    <h5>Contact Info</h5>
-    <h6>End of Headings</h6>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" />
 
-    <img src="https://via.placeholder.com/150" alt="Student Photo">
+        
 
-    <p><i>"Knowledge is power." - Francis Bacon</i></p>
-
-    <p>Hello! I am a student of Computer Science. I enjoy coding and building cool web apps.</p>
-
-    <h3>Subjects and Grades</h3>
-    <table>
-      <tr>
-        <th>Subject</th>
-        <th>Grade</th>
-      </tr>
-      <tr>
-        <td>HTML</td>
-        <td>A</td>
-      </tr>
-      <tr>
-        <td>JavaScript</td>
-        <td>A-</td>
-      </tr>
-      <tr>
-        <td>SQL</td>
-        <td>B+</td>
-      </tr>
-    </table>
-
-    <h3>Feedback</h3>
-    <div>
-      <label for="feedback">Enter your feedback:</label><br>
-      <input type="text" id="feedback" placeholder="Write something..."><br>
-      <button onclick="alert('Thank you for your feedback!')">Submit</button>
+        <button type="submit">Submit</button>
+        <p class="create-account-text">
+          Don't have an account? <a href="#">Create one</a>
+        </p>
+      </form>
     </div>
-
-    <p>Check out my <a href="https://github.com" target="_blank">GitHub</a> for more projects.</p>
-
-    <h3>Watch this tutorial:</h3>
-    <iframe width="400" height="250" src="https://www.youtube.com/embed/3JluqTojuME" 
-      title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-
   </div>
 
 </body>
